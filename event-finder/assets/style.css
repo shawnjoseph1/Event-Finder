@@ -27,17 +27,33 @@ html {
 	scroll-behavior: smooth;
 }
 
+
+.top-banner {
+    text-align: center;
+    background-color: #181818;
+  }
+  
+  .top-banner a {
+    display: inline-block;
+  }
+  
+  .top-banner a {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 0.8125rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Roobert, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    letter-spacing: 0.0175rem;
+    line-height: 1.25rem;
+  }
+  
 .hero{
-	min-height: 100vh;
-    -webkit-text-size-adjust: 100%;
-    border-color: rgb(63 63 70/var(--tw-border-opacity));
-    display: flex;
-    justify-content: center;
     background-image: url("../images/seatgeekhomepage.jpg");
     display: block;
     margin-left: auto;
     margin-right: auto;
-     width: 75%;
+    width: 75%;
 }
 
   /* NAV section STARTS */
@@ -46,16 +62,16 @@ nav{
     z-index: 40;
     position:fixed;
     display: flex;
-    padding-top: 15px;
     padding-top: 1rem;
     padding-bottom: 1rem;
     flex-direction: row;
+    position: absolute;
 }
 
 nav img {
     display: flex;
     width: 40px;
-    height: 30px;
+    height: 35px;
     position: absolute;
     left: 8rem;
 }
@@ -90,7 +106,7 @@ nav ul li a{
 
 
 .content{
-    padding-top: 12rem;
+    padding-top: 10rem;
 	display: flex;
     align-items: center;
     flex-direction: column;
@@ -289,3 +305,11 @@ form {
 	
 }
   /* Trending events ENDS */
+
+
+
+
+
+  
+
+
