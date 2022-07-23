@@ -5,7 +5,7 @@ $(function () {
       event.preventDefault();
       var userInputValue = $('#search').val();
       console.log('user input: ', userInputValue);
-      var tmApiUrlRoot = tmApiUrlRoot + userInputValue;
+      var tmApiUrl = tmApiUrlRoot + userInputValue;
       console.log(tmApiUrl);
       getUserData(tmApiUrl);
     });
