@@ -1,0 +1,293 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: ui-sand-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 
+    Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+	box-sizing: border-box;
+}
+
+:root {
+    --rad: .7rem;
+    --dur: .3s;
+    --color-dark: #2f2f2f;
+    --color-light: #fff;
+    --font-fam: 'Lato', sans-serif;
+    --height: 5rem;
+    --btn-width: 6rem;
+    --bez: cubic-bezier(0, 0, 0.43, 1.49);
+  }
+
+  body {
+  background-color: black;
+  }
+  
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+.top-banner {
+    text-align: center;
+    background-color: #181818;
+  }
+  
+  .top-banner a {
+    display: inline-block;
+  }
+  
+  .top-banner a {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 0.8125rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Roobert, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    letter-spacing: 0.0175rem;
+    line-height: 1.25rem;
+  }
+  
+.hero{
+    background-image: url("../assets/images/seatgeekhomepage.jpg");
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+  /* NAV section STARTS */
+
+nav{
+    z-index: 40;
+    position:fixed;
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    flex-direction: row;
+    position: absolute;
+}
+
+nav img {
+    display: flex;
+    width: 40px;
+    height: 35px;
+    position: absolute;
+    left: 8rem;
+}
+
+
+nav ul li{
+	display: inline-block;
+    font-weight: 550;
+	padding: 5px  15px;
+    
+}
+
+nav ul li a{
+	color: white;
+    text-decoration: inherit;
+    font-size: .875rem;
+}
+
+
+.left {
+    margin-left: 11.7rem;
+    display: flex;
+    position: absolute;
+    word-spacing: 1px;
+}
+
+.right {
+    display: flex;
+    margin-left: 68rem;
+   
+}
+
+
+.content{
+    padding-top: 10rem;
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+  /* NAV section ENDS */
+
+
+h1 { 
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    background-position: 50%;
+	font-family: "Exo", sans-serif;
+    background-color: white;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+
+}
+
+h3{
+	color: white;
+	font-size: 25px;
+    padding-top: 10px;
+	margin-bottom: 50px;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* Search Bar (form) section STARTS */
+
+form {
+    position: relative;
+    width: 40rem;
+    border-radius: var(--rad);
+  }
+
+  input, button {
+    height: var(--height);
+    font-family: var(--font-fam);
+    border: 0;
+    color: var(--color-dark);
+    font-size: 1.8rem;
+  }
+  
+  input[type="search"] {
+    outline: 0; 
+    width: 100%;
+    background: var(--color-light);
+    padding: 0 1.6rem;
+    border-radius: var(--rad);
+    appearance: none; 
+    position: relative;
+  }
+ 
+  label {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+
+  /* Search Bar (form) section ENDS */
+
+  /* Trending events section */
+
+.title h2{
+	color: white;
+	font-size: 22px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: left;
+    margin-left: 7rem;
+}
+
+.hr {
+    border: 0; border-top: 1px solid rgb(255, 255, 255, 0.16);
+    width: 84%;
+    margin-left: 7rem;
+    margin-top: 172px;
+}
+
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+} 
+
+.card{
+	display: flex;
+	height: 380px;
+	width: 380px;
+	padding: 20px 35px;
+	background: #191919;
+	margin: 15px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+    border-radius: 0.5rem 0.5rem 0px 0px;
+    
+}
+
+
+.event1 img {
+    align-items: center;
+    max-width: 100%;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+}
+
+
+.event1 h3 {
+    text-align: left;
+	color: rgba(255, 255, 255, 0.48);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.event1 h2 {
+    text-align: left;
+	color: white;
+    margin-top: 13rem;
+	
+}
+
+
+.event2 img {
+	align-items: center;
+    max-width: 100%;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.event2 h3 {
+	text-align: left;
+	color: rgba(255, 255, 255, 0.48);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.event2 h2 {
+	text-align: left;
+	color: white;
+    margin-top: 13rem;
+	
+}
+
+.event3 img {
+    align-items: center;
+    max-width: 100%;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.event3 h3 {
+    text-align: left;
+	color: rgba(255, 255, 255, 0.48);
+    font-size: 20px;
+    font-weight: 400;
+	
+}
+
+.event3 h2 {
+    text-align: left;
+	color: white;
+    margin-top: 13rem;
+	
+}
+  /* Trending events ENDS */
