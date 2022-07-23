@@ -212,6 +212,7 @@ form {
 	overflow: hidden;
 	text-align: center;
     border-radius: 0.5rem 0.5rem 0px 0px;
+    justify-content: center;
     
 }
 
