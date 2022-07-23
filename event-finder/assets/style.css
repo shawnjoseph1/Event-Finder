@@ -104,7 +104,8 @@ nav ul li a{
 }
 
 
-.content{
+.conten{
+    font-size: 30px;
     padding-top: 10rem;
 	display: flex;
     align-items: center;
@@ -141,6 +142,7 @@ h3{
 /* Search Bar (form) section STARTS */
 
 form {
+    padding-top: 20px;
     position: relative;
     width: 40rem;
     border-radius: var(--rad);
@@ -194,14 +196,14 @@ form {
     margin-top: 172px;
 }
 
-.bo{
+.bocs{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	min-height: 400px;
 } 
 
-.card{
+.kards{
 	display: flex;
 	height: 380px;
 	width: 380px;
@@ -237,6 +239,7 @@ form {
 }
 
 .event1 h2 {
+    font-size: 35px;
     text-align: left;
 	color: white;
     margin-top: 13rem;
@@ -261,6 +264,7 @@ form {
 }
 
 .event2 h2 {
+    font-size: 35px;
 	text-align: left;
 	color: white;
     margin-top: 13rem;
@@ -286,9 +290,9 @@ form {
 }
 
 .event3 h2 {
+    font-size: 35px;
     text-align: left;
 	color: white;
-    margin-top: 13rem;
-	
+    margin-top: 13rem;	
 }
   /* Trending events ENDS */
