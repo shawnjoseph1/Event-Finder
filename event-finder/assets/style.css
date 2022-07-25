@@ -241,12 +241,10 @@ form {
   }
 
   #event1 h3 {
-    text-orientation: mixed;
-    display: flex;
     padding-top: 18rem;
     text-align: left;
 	color: rgba(255, 255, 255, 0.48);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     
   }
@@ -289,7 +287,7 @@ form {
 
   #event3 h2 {
     display: flex;
-    font-size: 20px;
+    font-size: 17px;
     text-align: left;
 	color: white;
     margin-top: 15rem;
@@ -297,10 +295,11 @@ form {
   }
 
   #event3 h3 {
-    padding-top: 18rem;
+    padding-left: 1rem;
+    padding-top: 17rem;
     text-align: left;
 	color: rgba(255, 255, 255, 0.48);
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 400;
     
   }
@@ -463,3 +462,4 @@ form {
 		transition: 0.7s;
 	}
 }
+
