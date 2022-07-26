@@ -11,6 +11,10 @@
     --dur: .3s;
     --color-dark: #2f2f2f;
     --color-light: #fff;
+<<<<<<< HEAD
+=======
+    --color-brand: #57bd84;
+>>>>>>> 1be730df4036df6699263b71c606ae8dfdc2285b
     --font-fam: 'Lato', sans-serif;
     --height: 5rem;
     --btn-width: 6rem;
@@ -48,7 +52,11 @@ html {
   }
   
 .hero{
+<<<<<<< HEAD
     background-image: url("../assets/images/seatgeekhomepage.jpg");
+=======
+    background-image: url("../images/seatgeekhomepage.jpg");
+>>>>>>> 1be730df4036df6699263b71c606ae8dfdc2285b
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -104,8 +112,12 @@ nav ul li a{
 }
 
 
+<<<<<<< HEAD
 .contents{
     font-size: 30px;
+=======
+.content{
+>>>>>>> 1be730df4036df6699263b71c606ae8dfdc2285b
     padding-top: 10rem;
 	display: flex;
     align-items: center;
@@ -123,7 +135,11 @@ h1 {
     text-align: center;
     background-position: 50%;
 	font-family: "Exo", sans-serif;
+<<<<<<< HEAD
     background-color: rgb(255, 255, 255);
+=======
+    background-color: white;
+>>>>>>> 1be730df4036df6699263b71c606ae8dfdc2285b
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
@@ -131,7 +147,11 @@ h1 {
 }
 
 h3{
+<<<<<<< HEAD
     color: white;
+=======
+	color: white;
+>>>>>>> 1be730df4036df6699263b71c606ae8dfdc2285b
 	font-size: 25px;
     padding-top: 10px;
 	margin-bottom: 50px;
@@ -142,7 +162,10 @@ h3{
 /* Search Bar (form) section STARTS */
 
 form {
+<<<<<<< HEAD
     padding-top: 20px;
+=======
+>>>>>>> 1be730df4036df6699263b71c606ae8dfdc2285b
     position: relative;
     width: 40rem;
     border-radius: var(--rad);
@@ -176,16 +199,20 @@ form {
     overflow: hidden;
   }
 
+<<<<<<< HEAD
   .button {
     left: 260px;
     top: 50px;
   }
+=======
+>>>>>>> 1be730df4036df6699263b71c606ae8dfdc2285b
   /* Search Bar (form) section ENDS */
 
   /* Trending events section */
 
 .title h2{
 	color: white;
+<<<<<<< HEAD
 	font-size: 22px;
 	width: 1130px;
 	margin: 30px auto;
@@ -201,13 +228,27 @@ form {
 }
 
 .boxes{
+=======
+	font-size: 30px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: left;
+    padding-top: 10rem;
+}
+
+.box{
+>>>>>>> 1be730df4036df6699263b71c606ae8dfdc2285b
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	min-height: 400px;
 } 
 
+<<<<<<< HEAD
 .cards{
+=======
+.card{
+>>>>>>> 1be730df4036df6699263b71c606ae8dfdc2285b
 	display: flex;
 	height: 380px;
 	width: 380px;
@@ -218,10 +259,18 @@ form {
 	overflow: hidden;
 	text-align: center;
     border-radius: 0.5rem 0.5rem 0px 0px;
+<<<<<<< HEAD
     justify-content: center;   
 }
 
   #event1 img {
+=======
+    
+}
+
+
+.event1 img {
+>>>>>>> 1be730df4036df6699263b71c606ae8dfdc2285b
     align-items: center;
     max-width: 100%;
     position: absolute;
@@ -229,6 +278,7 @@ form {
     left: 50%;
     transform: translate(-50%, -50%);
     
+<<<<<<< HEAD
   }
 
   #event1 h2 {
@@ -269,10 +319,18 @@ form {
 
   #event2 h3 {
     padding-top: 18rem;
+=======
+
+}
+
+
+.event1 h3 {
+>>>>>>> 1be730df4036df6699263b71c606ae8dfdc2285b
     text-align: left;
 	color: rgba(255, 255, 255, 0.48);
     font-size: 20px;
     font-weight: 400;
+<<<<<<< HEAD
     
   }
 
@@ -463,3 +521,63 @@ form {
 	}
 }
 
+=======
+}
+
+.event1 h2 {
+    text-align: left;
+	color: white;
+    margin-top: 13rem;
+	
+}
+
+
+.event2 img {
+	align-items: center;
+    max-width: 100%;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.event2 h3 {
+	text-align: left;
+	color: rgba(255, 255, 255, 0.48);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.event2 h2 {
+	text-align: left;
+	color: white;
+    margin-top: 13rem;
+	
+}
+
+.event3 img {
+    align-items: center;
+    max-width: 100%;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.event3 h3 {
+    text-align: left;
+	color: rgba(255, 255, 255, 0.48);
+    font-size: 20px;
+    font-weight: 400;
+	
+}
+
+.event3 h2 {
+    text-align: left;
+	color: white;
+    margin-top: 13rem;
+	
+}
+  /* Trending events ENDS */
+>>>>>>> 1be730df4036df6699263b71c606ae8dfdc2285b
