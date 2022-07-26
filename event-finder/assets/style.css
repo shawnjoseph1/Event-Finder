@@ -48,7 +48,7 @@ html {
   }
   
 .hero{
-    background-image: url("../assets/images/seatgeekhomepage.jpg");
+    background-image: url("../images/seatgeekhomepage.jpg");
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -308,6 +308,8 @@ form {
 
   @media (max-width: 576px){
 
+
+
 	html {
 		font-size: 5px;
 		max-width: 100%;
@@ -317,6 +319,7 @@ form {
 	  }
 
 	body {
+    overflow-x:hidden;
 		font-family: Manrope,sans-serif;
 		font-kerning: normal;
 		text-rendering: optimizeSpeed;
@@ -332,6 +335,11 @@ form {
 
 
 @media screen and (max-width: 980px) {
+
+  body {
+    overflow-x:hidden;
+  }
+
 	.hero {
 		padding-bottom: 0;
 		justify-content: center;
@@ -351,14 +359,14 @@ form {
 	.hero nav ul {
 		margin-top: 20px;
 		width: 100%;
-		justify-content: center;
-		
+		justify-content: center;	
 	}
   
-	.hero nav ul li a {
+    nav ul li a {
+    position: absolute;
+    right: 0rem;
 		font-size: 10px;
-		display: flex;
-		
+		display: flex;	
 	}
   
 	.cards {
@@ -368,7 +376,12 @@ form {
   
   @media screen and (max-width: 768px) {
 
+    body {
+      overflow-x:hidden;
+    }
+
     nav {
+      align-items: center;
         display: flex;
         padding-top: 25px;
         flex-direction: row-reverse;
@@ -377,26 +390,27 @@ form {
     }
 
     nav img {
-        left: 18.6rem;
-        padding: 5px;
+    width: 30%;
+    height: 200%;
+    position: absolute;
+    left: 13rem;
+    top: 100px;
 		display: flex;
     }
 
-	nav ul {
-		display: flex;
-		align-items: center;
-	}
-
-    nav ul li {
-        padding-top: 30px;
-        font-size: 10px;
-        display: flex;
-        
+    .left {
+      display: none;
     }
+
+    .right {
+      display: none;
+    }
+
 
 	.contents {
 		display: flex;
 		flex-direction: column;
+    
 	}
 
     .contents h1 {
@@ -415,7 +429,7 @@ form {
     }
 
     .button{
-        left: 7.5rem;
+        left: 6rem;
     }
 
     .title h2 {
@@ -423,7 +437,7 @@ form {
         padding-bottom: 70px;
         position: absolute;
         top: 45rem;
-        margin-left: 10rem;
+        margin-left: 8.2rem;
     }
 
     .hr {
