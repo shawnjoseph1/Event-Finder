@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>SeatGeek</title>
+        <title>Event Finder</title>
         <link rel="stylesheet" type="text/css" href="./assets/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="./assets/script.js"></script>
     </head>
 
         <body>
             <!----hero Section start---->
 
             <div class="top-banner">
-                <a target="_blank">SeatGeek is the smart way to buy and resell tickets. All confirmed purchases are 100% guaranteed. 
-                    All resale ticket prices may be above or below face value.</a>
+                <a target="_blank">Event Finder is the quick way to search SeatGeek and TicketMaster for events at the same time!</a>
               </div>
 
             <div id="hero" class="hero">
@@ -22,8 +24,7 @@
                     <div>                       
                         <a href=""></a>
                           
-                        <img src="./assets/images/seatgeeklogo.png" alt="SeatGeek logo"
-                            Logo">
+                        <img src="./assets/images/seatgeeklogo.png" alt="SeatGeek logo">
                     </div>
 
                     <ul class="left">
@@ -60,7 +61,7 @@
 
 
 
-                <div id="home" class="content">
+                <div id="home" class="contents">
                    
                     <h1>Let there be live</h1>
                          
@@ -70,70 +71,83 @@
                     </h3>
 
                     <form onsubmit="event.preventDefault();" role="search">
-                        <label for="search">Search by team, artist, event, or venue</label>
-                        <input id="search" type="search" placeholder="Search by team, artist, event, or venue" autofocus required />
-                      </form>
+                        <label for="search">Search by city</label>
+                        <input id="search" type="search" placeholder="Search by city" autofocus required />
+                      
+                      <br>
+                      <button class="button **is-medium is-success is-rounded**" id="search">Search</button>
+                    </form>
 
                 </div>
+
                  <!----trending events START---->
-                <section> 
-                    <div id="projects" class="projects" >
+                
+              
+
                 <hr class="hr">
                         <div class="title">
                             <h2 class="title">Trending events</h2>
                         </div>
-                
-                        <div class="box">
-                            <div class="card">
-                                <div class="event1">
-                                <img src="./assets/images/theweekend.webp" alt=""  />
 
-                                <h2>
-                                 The Weeknd
+                        
+                        <section class="events"> 
+
+                        <div class="boxes">
+                            <div id="event1" class="cards">
+                                <div class="event1">
+                                <img src="/" alt=""  />
+
+                                <h2 id="name">
+                               
                                 </h2>
                     
-                                <h3>
-                                    Sat, Aug 6, 6:30pm
-                                    <br>
-                                    Hard Rock Stadium
+                                <h3 id="localDate">
+                                    
                                 </h3>
+                                
+                                <h3 id="venue">
+                                   
+                                </h3>
+                                
                                 
                             </div>
                         </div>
                 
-                
-                            <div class="box">
-                                <div class="card">
+                            <div class="boxes">
+                                <div id="event2" class="cards">
                                     <div class="event2">
-                                        <img src="./assets/images/theweekend.webp" alt=""  />
+                                        <img src="./" alt=""  />
                                     
-                                        <h2>
-                                            The Weeknd
+                                        <h2 id="name">
+                                     
                                         </h2>
 
-                                        <h3> 
-                                            Sat, Aug 6, 6:30pm
-                                            <br>
-                                            Hard Rock Stadium
+                                        <h3 id="localDate">
+                                      
+                                        </h3>
+                                        
+                                        <h3 id="venue">
+                                         
                                         </h3>
                                 </div>
                             </div>
                 
-                            <div class="box">
-                                <div class="card">
+                            <div class="boxes">
+                                <div id="event3" class="cards">
                                     <div class="event3">
-                                        <img src="./assets/images/theweekend.webp" alt=""  />
+                                        <img src="/" alt=""  />
                                     
-                                        <h2>
-                                            The Weeknd
+                                        <h2 id="name">
+                                         
                                         </h2>
 
-                                        <h3> 
-                                            Sat, Aug 6, 6:30pm
-                                            <br>
-                                            Hard Rock Stadium
+                                        <h3 id="localDate">
+                                          
                                         </h3>
-                                 </div>
+                                        
+                                        <h3 id="venue">
+                                         
+                                        </h3>
                              </div>                                   
                           </div>
                         </div>
@@ -145,6 +159,6 @@
             </div>
             <!----trending events END---->
 
-        </body>
-
-    </html>
+        <script src="./assets/script.js"></script>
+            </body>
+</html>
