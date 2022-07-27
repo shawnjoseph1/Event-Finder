@@ -26,7 +26,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-
 .top-banner {
     text-align: center;
     background-color: #181818;
@@ -89,7 +88,6 @@ nav ul li a{
     font-size: .875rem;
 }
 
-
 .left {
     margin-left: 11.7rem;
     display: flex;
@@ -111,6 +109,7 @@ nav ul li a{
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 }
   /* NAV section ENDS */
 
