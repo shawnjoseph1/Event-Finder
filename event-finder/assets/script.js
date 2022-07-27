@@ -2,15 +2,21 @@ $('form').submit(function (event) {
   event.preventDefault();
   console.log('This is working');
   var tmApiUrlRoot = 'https://app.ticketmaster.com/discovery/v2/events?apikey=bxA202NsGHlp2jqKOCsAbRGtvfyWnqaJ&locale=*&city=';
+  var sgApiUrlRoot = 'https://api.seatgeek.com/2/venues?client_id=Mjc5OTkxNDl8MTY1ODUzMzQ1OC42ODYwMjA0&city=';
 
   var userInputValue = $('#search').val();
 
   console.log('user input: ', userInputValue);
   var tmApiUrl = tmApiUrlRoot + String(encodeURIComponent(userInputValue));
-  console.log(tmApiUrl);
-  getUserData(tmApiUrl);
+  var sgApiUrl = sgApiUrlRoot + String(encodeURIComponent(userInputValue));
+  console.log(tmApiUrl, sgApiUrl);
+  getUserData(tmApiUrl, sgApiUrl);
 });
 
+Promise.all([
+  fetch('https://app.ticketmaster.com/discovery/v2/events?apikey=bxA202NsGHlp2jqKOCsAbRGtvfyWnqaJ&locale=*&city='),
+  fetch('https://api.seatgeek.com/2/venues?client_id=Mjc5OTkxNDl8MTY1ODUzMzQ1OC42ODYwMjA0&city=')
+])
 function getUserData(url) {
   fetch(url)
   .then(function (request) {
