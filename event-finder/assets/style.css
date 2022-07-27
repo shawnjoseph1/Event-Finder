@@ -26,6 +26,7 @@ html {
 	scroll-behavior: smooth;
 }
 
+
 .top-banner {
     text-align: center;
     background-color: #181818;
@@ -48,6 +49,7 @@ html {
   
 .hero{
     background-image: url("../images/seatgeekhomepage.jpg");
+    background-repeat: no-repeat;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -88,6 +90,7 @@ nav ul li a{
     font-size: .875rem;
 }
 
+
 .left {
     margin-left: 11.7rem;
     display: flex;
@@ -103,39 +106,38 @@ nav ul li a{
 
 
 .contents{
-    font-size: 30px;
-    padding-top: 10rem;
+  font-size: 30px;
+  padding-top: 10rem;
 	display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
   /* NAV section ENDS */
 
 
-h1 { 
-    font-size: 3rem;
-    line-height: 1;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    text-align: center;
-    background-position: 50%;
+.h1 { 
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+  background-position: 50%;
 	font-family: "Exo", sans-serif;
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
 
 }
 
-h3{
-    color: white;
-	font-size: 25px;
-    padding-top: 10px;
+.h3{
+  color: white;
+	font-size: 10px;
+  padding-top: 10px;
 	margin-bottom: 50px;
-    font-size: 1.5rem;
-    font-weight: 300;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 /* Search Bar (form) section STARTS */
@@ -179,6 +181,15 @@ form {
     left: 260px;
     top: 50px;
   }
+
+  .category {
+    box-sizing: border-box;
+    
+    position: absolute;
+    left: 50rem;
+    top: 35rem;
+    border-radius: 20rem;
+  }
   /* Search Bar (form) section ENDS */
 
   /* Trending events section */
@@ -193,7 +204,7 @@ form {
 }
 
 .hr {
-    border: 0; border-top: 1px solid rgb(255, 255, 255, 0.16);
+  background-color: rgb(255, 255, 255, 0.16);
     width: 84%;
     margin-left: 7rem;
     margin-top: 172px;
@@ -378,23 +389,18 @@ form {
     body {
       overflow-x:hidden;
     }
+    
 
     nav {
-      align-items: center;
-        display: flex;
-        padding-top: 25px;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        right: 4.5rem;
+      right: 4.5rem;
     }
 
     nav img {
-    width: 30%;
-    height: 200%;
+    width: 10%;
+    height: 100%;
     position: absolute;
-    left: 13rem;
-    top: 100px;
-		display: flex;
+    left: 6rem;
+    top: 15px;
     }
 
     .left {
@@ -405,17 +411,25 @@ form {
       display: none;
     }
 
+    .hero {
+      background-image: url(./images/homepage-xsmall.jpg);
+    }
 
-	.contents {
-		display: flex;
-		flex-direction: column;
-    
-	}
+    .ticketmaster {
+      left: 27rem;
+      width: 20%;
+      height: 300%;
+    }
+
+
+  .top-banner {
+    display: none;
+  }
 
     .contents h1 {
-        padding-top: 80px;
-        font-size: 30px;
-        padding-bottom: 20px;
+        font-size: 25px;
+        font-weight: bolder;
+        
     }
 
     .contents h3 {
@@ -423,37 +437,43 @@ form {
     }
 
     .contents form {
-        padding-top: 100px;
-        width: 70%;
+        padding-top: 5px;
+        width: 90%;
     }
 
     .button{
-        left: 6rem;
+        left: 8.5rem;
     }
 
     .title h2 {
-        padding-top: 25px;
+      text-align: left;
+        padding-top: 10px;
         padding-bottom: 70px;
         position: absolute;
-        top: 45rem;
-        margin-left: 8.2rem;
+        top: 37rem;
+        margin-left: 7rem;
     }
 
     .hr {
-        width: 51%;
+      width: 95%;
+      position: absolute;
+      right: 0.640rem;
+      top: 27rem;
     }
 
 	.boxes {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
-        padding-top: 70px
+
 	}
 
     .cards {
 		flex: 0 70%;
+    margin-top: 14rem;
+    
 	}
-
+  
 	.event1 img {
 		max-width: 100%;
 		max-height: 100%;
@@ -475,4 +495,5 @@ form {
 		transition: 0.7s;
 	}
 }
+
 
