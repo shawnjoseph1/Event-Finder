@@ -488,4 +488,30 @@ form {
 	}
 }
 
+@media  screen and (max-width: 1600px) {
+  
+  body {
+    overflow-x:hidden;
+  }
+
+	.hero {
+		padding-bottom: 0;
+		justify-content: center;
+		position: relative;
+		width: 100%;
+	}
+  
+	nav {
+		display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+	}
+  
+	.hero nav ul {
+		margin-top: 20px;
+		width: 100%;
+		
+	}
+}
 
