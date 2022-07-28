@@ -48,7 +48,7 @@ html {
   }
   
 .hero{
-    background-image: url("../images/seatgeekhomepage.jpg");
+    background-image: url("../assets/images/seatgeekhomepage.jpg");
     background-repeat: no-repeat;
     display: block;
     margin-left: auto;
